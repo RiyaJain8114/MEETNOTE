@@ -1,0 +1,122 @@
+.home{
+    margin-left: 100px;
+    padding-top: 100px;
+    z-index: 1;
+    position: relative;
+}
+.home2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: -2;
+    margin-top: 0;
+}
+
+h1 {
+    font-family: 'Untitled Serif';
+    font-size: 100px;
+    line-height: 98px;
+    font-weight: 400;
+    color: #f6e51c;
+}
+
+p {
+   font-size: 19px;
+   font-weight: 400;
+    color: #f6e51c;
+    letter-spacing: 1px;
+}
+.overlay-content{
+    width: 50%;
+}
+.left{
+    float: left;
+}
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    transition: width 0.15s, height 0.15s, opacity 0.15s;
+  }
+  
+  .cursor::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 1) 0%,rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.2) 100%);
+    opacity: 0.25;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.15s;
+  }
+
+  :root {
+    --gold: #ffb338;
+    --light-shadow: #77571d;
+    --dark-shadow: #3e2904;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-areas: 'overlap';
+    place-content: center;
+    text-transform: uppercase;
+  }
+  .wrapper > div {
+    background-clip: text;  
+    -webkit-background-clip: text;
+    color: #363833;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 6em;
+    grid-area: overlap;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 4px transparent;
+  }
+  div.bg {
+    background-image: repeating-linear-gradient( 105deg, 
+      var(--gold) 0% , 
+      var(--dark-shadow) 5%,
+      var(--gold) 12%);
+    color: transparent;
+    filter: drop-shadow(5px 15px 15px black);
+    transform: scaleY(1.05);
+    transform-origin: top;
+  }
+  div.fg{
+    background-image: repeating-linear-gradient( 5deg,  
+      var(--gold) 0% , 
+      var(--light-shadow) 23%, 
+      var(--gold) 31%);
+    color: #1e2127;
+    transform: scale(1);
+  }
+  .file_upload {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #f6e51c;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: black;
+    height: 40px;
+    width: 140px;
+    font-size: 16px;
+  }
+
+
+.text_btn{
+    margin-top: 8px;
+    font-weight: bold;
+    text-align: center;
+}
