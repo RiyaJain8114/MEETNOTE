@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+git+https://github.com/openai/whisper.git
+transformers
+hugchat
+python-docx
+pydub
+ffmpeg-python
+numpy
+torch
